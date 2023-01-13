@@ -1,12 +1,17 @@
-require('dotenv').config();
-var http=require('http');
-
 const express = require('express');
 const app = express();
-const userRoutes = require('./route/UserRoutes');
-app.use(express.json());
+const userRoute = require('./route/UserRoutes');
+require('dotenv').config();
+const connectDB = require('./db/connection');
+const mongoose = require('mongoose');
 
-app.use(userRoutes);
+app.use(express.json())
+app.use(userRoute);
+connectDB();
 
-const server = http.createServer(app);
-server.listen(8000);
+mongoose.connection.once('open', () => {
+    console.log('Database Connected!')
+    app.listen(process.env.PORT, (req, res) => {
+        console.log(`Server running on PORT ${process.env.PORT}`);
+    })
+})

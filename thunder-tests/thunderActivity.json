@@ -14,6 +14,20 @@
     "tests": []
   },
   {
+    "_id": "f9376675-27d2-47c2-9e70-e8ef0e1d4c4b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/by-id",
+    "url": "http://localhost:8000/63c19368abd16ee61c60bb4e",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-12-29T17:35:50.539Z",
+    "modified": "2023-01-13T17:29:21.975Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
     "_id": "115f731d-897b-4fba-ad0a-fcf2dab591ae",
     "colId": "history",
     "containerId": "",
@@ -22,12 +36,64 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-12-29T17:39:54.416Z",
-    "modified": "2022-12-29T17:50:57.171Z",
+    "modified": "2023-01-13T17:25:38.891Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\":\"Ali\",\n  \"mobile\":\"9664831958\"\n}",
+      "raw": "{\n  \"name\":\"Rishi\",\n  \"email\":\"rishi@shaikh.com\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "423cd2cb-166d-4ad3-b2ef-7f5bf03001d3",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/",
+    "url": "http://localhost:8000/63c19322d307a0159f9ab947",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-12-29T17:39:54.416Z",
+    "modified": "2023-01-13T17:23:06.230Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f6e0fcd8-ef09-4538-b51c-d71326d8bf39",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/ update",
+    "url": "http://localhost:8000/63c1941b08864daa60beb79c",
+    "method": "PATCH",
+    "sortNum": 0,
+    "created": "2022-12-29T17:39:54.416Z",
+    "modified": "2023-01-13T17:35:25.105Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"Rishi-updated\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "747313f3-883e-4849-8ae4-b7fbaada772b",
+    "colId": "history",
+    "containerId": "",
+    "name": "Login",
+    "url": "http://localhost:8000/",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-12-29T17:39:54.416Z",
+    "modified": "2023-01-13T17:25:38.891Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"Rishi\",\n  \"email\":\"rishi@shaikh.com\"\n}",
       "form": []
     },
     "tests": []
